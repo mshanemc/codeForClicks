@@ -1,5 +1,9 @@
 <aura:component>
-	<aura:attribute name="text" type="string" default="World" access="public" required="false"/>
+
+<aura:attribute name="text" type="string" default="World" access="public" required="false"/>
+	<aura:attribute name="ms" type="integer" default="500" />
+
+	<aura:handler name="init" value="{!this}" action="{!c.blink}" />
 
 	<div aura:id="blinkThis" class="blink">
 		Hello, {!v.text}

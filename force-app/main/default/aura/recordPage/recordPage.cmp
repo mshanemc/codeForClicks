@@ -1,7 +1,7 @@
 <aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
 
-	<aura:attribute name="text" type="string" default="{!v.recordId}"/>
+	<aura:attribute name="text" type="string" />
 
-	<c:exampleComponent text="{!text}" />
+	<c:exampleComponent text="{!v.text}" />
 
 </aura:component>
