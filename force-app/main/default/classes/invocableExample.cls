@@ -2,7 +2,7 @@ public with sharing class invocableExample {
 
     // apex actions that show up in Process Builder
     @InvocableMethod(label='reverse a field')
-	public static void DeleteRecord(list<ReversalRequest> requests) {
+	public static void reverseIt(list<ReversalRequest> requests) {
 
 		for (ReversalRequest rr:requests){
             // call your apex code here

@@ -1,0 +1,8 @@
+<aura:component>
+	<aura:attribute name="text" type="string" default="World" access="public" required="false"/>
+
+	<div aura:id="blinkThis" class="blink">
+		Hello, {!v.text}
+	</div>
+
+</aura:component>
