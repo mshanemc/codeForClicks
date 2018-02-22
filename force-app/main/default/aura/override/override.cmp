@@ -1,0 +1,5 @@
+<aura:component implements="force:hasRecordId">
+
+	<c:exampleComponent text="{!v.recordId}" />
+
+</aura:component>
