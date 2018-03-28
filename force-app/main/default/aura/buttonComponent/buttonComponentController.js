@@ -11,7 +11,8 @@
             var state = a.getState();
             if (state === "SUCCESS") {
                 console.log(a);
-                $A.get("e.force:showToast").setParams({"type" : "success", "message" : "Name reversed!"}).fire();
+                $A.get("e.force:showToast").setParams({"type" : "success", "message" : "Name reversed! refresh to see it"}).fire();
+                $A.get("e.force:refreshView").fire();
                 $A.get("e.force:closeQuickAction").fire();
             } else if (state === "ERROR") {
                 console.log(a.getError());
