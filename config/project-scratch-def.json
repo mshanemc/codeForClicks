@@ -1,5 +1,6 @@
 {
-    "orgName": "codeForClicks",
+    "orgName": "workshops",
+    "description": "code for clicks",
     "edition": "Developer",
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled"],
