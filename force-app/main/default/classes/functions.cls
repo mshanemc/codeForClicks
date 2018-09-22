@@ -6,7 +6,6 @@ public with sharing class functions {
     field is the API field name that you want reversed
 
     It updates that field with the text reversed  */
-    @AuraEnabled
     public static void reverse(id recordId, string field) {
         string query = 'select ' + field + ' from ' + recordId.getSobjectType().getDescribe().getName() + ' where id = :recordId';
         sobject s = Database.query(query);
